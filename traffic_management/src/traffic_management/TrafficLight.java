@@ -1,7 +1,11 @@
 package traffic_management;
 
 public class TrafficLight {
-	Color myColor = Color.RED;
+	private Color myColor;
+
+	public TrafficLight() {
+		myColor = Color.RED;
+	}
 	
 	public void setColor(Color in) {
 		myColor =  in;

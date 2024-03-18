@@ -7,9 +7,14 @@ public class CarCounter implements NumberOfCars {
 	public void increment() {
 		carCount++;
 	}
+
+	public void increment(int i) {
+		carCount += i;
+	}
 	
 	public void decrement() {
-		carCount--;
+		if (carCount > 0)
+			carCount--;
 	}
 	
 	public int getCount() {
